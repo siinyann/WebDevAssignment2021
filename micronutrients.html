@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micronutrients</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="External.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style type="text/css">
+
+            #text1 {
+                text-align: center;
+            }
+            
+            #fsvitamins {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 32px 20px 32px;
+            }
+        
+            #fsvitamins .img2 {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        
+            #fsvitamins .text2 {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            #wsvitamins {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 32px 20px 32px;
+            }
+        
+            #wsvitamins .img3 {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        
+            #wsvitamins .text3 {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            #mminerals {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 32px 20px 32px;
+            }
+        
+            #mminerals .img5 {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        
+            #mminerals .text5 {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            #tminerals {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 32px 20px 32px;
+            }
+        
+            #tminerals .img6 {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        
+            #tminerals .text6 {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            #antioxidants {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 32px 20px 32px;
+            }
+        
+            #antioxidants .img7 {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        
+            #antioxidants .text7 {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            #video6 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 32px 20px 32px;
+            }
+            
+            #video6 iframe{
+                margin-right: 40px;
+                margin-left: 40px;
+            }
+            
+            #video6 .text7 {
+                margin-left: 10px;
+                margin-right: 40px;
+            }
+
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+              }
+              
+              td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+              }
+              
+              tr:nth-child(even) {
+                background-color: #dddddd;
+              }
+
+            .navbar .megamenu{ padding: 1rem; }
+            /* ============ desktop view ============ */
+            @media all and (min-width: 992px) {
+                
+                .navbar .has-megamenu{position:static!important;}
+                .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+                
+            }	
+            /* ============ desktop view .end// ============ */
+            
+            
+            /* ============ mobile view ============ */
+            @media(max-width: 991px){
+                .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+                    overflow-y: auto;
+                    max-height: 90vh;
+                    margin-top:10px;
+                }
+            }
+            /* ============ mobile view .end// ============ */
+            </style>
+            
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function(){
+                    /////// Prevent closing from click inside dropdown
+                    document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                        element.addEventListener('click', function (e) {
+                            e.stopPropagation();
+                        });
+                    })
+                }); 
+                // DOMContentLoaded  end
+            </script>
+    </head>
+    <body>
+        <header class="section-header py-4">
+            <div class="container">
+                <h2 class="logo">Logo</h2> 
+            </div>
+        </header> <!-- section-header.// -->
+        <div class = "container">
+            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #6CC417;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navatigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="toggleMobileMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Diet</a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-md-2 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Low-carb diets</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="ketodiet.html">Ketogenic</a></li>
+                                                <li><a class="dropdown-item" href="lowcarbdiet.html">Low-carb</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-md-2 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Low-fat diets</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="lowfatdiet.html">Low-fat</a></li>
+                                                <li><a class="dropdown-item" href="mediterraneandiet.html">Mediterranean</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-md-2 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">High-protein diets</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="highproteindiet.html">High-protein</a></li>
+                                                <li><a class="dropdown-item" href="zonediet.html">Zone</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div>    
+                                    <div class="col-md-2 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Plant-based diets</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="vegetariandiet.html">Vegetarian</a></li>
+                                                <li><a class="dropdown-item" href="vegandiet.html">Vegan</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-md-2 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Special diets</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="cleaneating.html">Clean eating</a></li>
+                                                <li><a class="dropdown-item" href="dairyfree.html">Dairy-free</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row --> 
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Recipe</a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-md-2 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Low-carb diets</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="ketorecipe.html">Ketogenic</a></li>
+                                                <li><a class="dropdown-item" href="lowcarbrecipe.html">Low-carb</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-md-2 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Low-fat diets</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="lowfatrecipe.html">Low-fat</a></li>
+                                                <li><a class="dropdown-item" href="mediterraneanrecipe.html">Mediterranean</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-md-2 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">High-protein diets</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="highproteinrecipe.html">High-protein</a></li>
+                                                <li><a class="dropdown-item" href="zonerecipe.html">Zone</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div>    
+                                    <div class="col-md-2 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Plant-based diets</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="vegetarianrecipe.html">Vegetarian</a></li>
+                                                <li><a class="dropdown-item" href="veganrecipe.html">Vegan</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-md-2 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Special diets</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="cleaneatingrecipe.html">Clean eating</a></li>
+                                                <li><a class="dropdown-item" href="dairyfreerecipe.html">Dairy-free</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row --> 
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Nutrition</a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-md-4 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Macronutrients</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="macronutrients.html#carb">Carbohydrates</a></li>
+                                                <li><a class="dropdown-item" href="macronutrients.html#fats">Fats</a></li>
+                                                <li><a class="dropdown-item" href="macronutrients.html#protein">Proteins</a></li>
+                                                <li><a class="dropdown-item" href="macronutrients.html#fibre">Fiber</a></li>
+                                                <li><a class="dropdown-item" href="macronutrients.html#water">Water</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-md-4 col-6">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Micronutrients</h6>
+                                            <ul class="list-unstyled">
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item" href="#fsvitamins">Fat-soluble vitamins</a></li>
+                                                <li><a class="dropdown-item" href="#wsvitamins">Water-soluble vitamins</a></li>
+                                                <li><a class="dropdown-item" href="#mminerals">Macrominerals</a></li>
+                                                <li><a class="dropdown-item" href="#tminerals">Trace minerals</a></li>
+                                                <li><a class="dropdown-item" href="#antioxidants">Antioxidants</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row --> 
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="subscribe.html">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#" class="to-top">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+            <script src="main.js"></script>
+            <div id="text1">
+                <h1>Micronutrients</h1>
+                <p>
+                    Micronutrients are essential in small amounts. They include vitamins and minerals. Manufacturers sometimes add these to foods. Examples include fortified cereals and rice.
+                </p>
+            </div>
+            <div id="vitamins">
+                <div class="text1">
+                    <h1>Vitamins</h1>
+                    <p>
+                        People need small amounts of various vitamins. Some of these, such as vitamin C, are also antioxidants. This means they help protect cells from damage by removing toxic molecules, known as free radicals, from the body.<br><br>
+                    </p>
+                    <p>
+                        Vitamins can be:<br><br>
+                        <strong>Water-soluble:</strong> The eight B vitamins and vitamin C<br><br>
+                        <strong>Fat-soluble:</strong> Vitamins A, D, E, and K<br><br>
+                    </p>
+                </div>
+            </div>
+            <div id="fsvitamins">
+                <img class="img2" src="images/fsvitamins.jpg" alt="fsv" style="width:500px;height:240px;"/>
+                <div class="text2">
+                    <h2>Fat-soluble vitamins</h2>
+                    <p>
+                        Fat-soluble vitamins do not dissolve in water.<br><br>
+                        They’re best absorbed when consumed alongside a source of fat. After consumption, fat-soluble vitamins are stored in your liver and fatty tissues for future use.<br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="section1">
+                <div class="text2">
+                    <p>
+                        The names and functions of fat-soluble vitamins are:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Vitamin</th>
+                            <th>Function</th>
+                        </tr>
+                        <tr>
+                            <td>Vitamin A</td>
+                            <td>Necessary for proper vision and organ function.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin D</td>
+                            <td>Promotes proper immune function and assists in calcium absorption and bone growth.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin E</td>
+                            <td>Assists immune function and acts as an antioxidant that protects cells from damage.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin K</td>
+                            <td>Required for blood clotting and proper bone development.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="wsvitamins">
+                <img class="img3" src="images/wsvitamins.jpg" alt="wsv" style="width:500px;height:240px;"/>
+                <div class="text3">
+                    <h2>Water-soluble vitamins</h2>
+                    <p>Most vitamins dissolve in water and are therefore known as water-soluble. They’re not easily stored in your body and get flushed out with urine when consumed in excess.<br><br>
+                        While each water-soluble vitamin has a unique role, their functions are related.<br><br>
+                        For example, most B vitamins act as coenzymes that help trigger important chemical reactions. A lot of these reactions are necessary for energy production. <br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="text3">
+                    <p>
+                        The water-soluble vitamins — with some of their functions — are:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Vitamin</th>
+                            <th>Function</th>
+                        </tr>
+                        <tr>
+                            <td>Vitamin B1</td>
+                            <td>Helps convert nutrients into energy.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin B2</td>
+                            <td>Necessary for energy production, cell function and fat metabolism.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin B3</td>
+                            <td>Drives the production of energy from food.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin B5</td>
+                            <td>Necessary for fatty acid synthesis.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin B6</td>
+                            <td>Helps your body release sugar from stored carbohydrates for energy and create red blood cells.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin B7</td>
+                            <td>Plays a role in the metabolism of fatty acids, amino acids and glucose.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin B9</td>
+                            <td>Important for proper cell division.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin B12</td>
+                            <td>Necessary for red blood cell formation and proper nervous system and brain function.</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin C</td>
+                            <td>Required for the creation of neurotransmitters and collagen, the main protein in your skin</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p>
+                        As you can see, water-soluble vitamins play an important role in producing energy but also have several other functions.
+                        Since these vitamins are not stored in your body, it’s important to get enough of them from food.
+                    </p>
+                </div>
+            </div>
+            <div id="minerals">
+                <div class="text4">
+                    <h1>Minerals</h1>
+                    <p>The body needs carbon, hydrogen, oxygen, and nitrogen.
+                        It also needs dietary minerals, such as iron, potassium, and so on.
+                        In most cases, a varied and balanced diet will provide the minerals a person needs. If a deficiency occurs, a doctor may recommend supplements.
+                        Here are some of the minerals the body needs to function well.
+                    </p>
+                </div>
+            </div>
+            <div id="mminerals">
+                <img class="img5" src="images/mminerals.jpg" alt="mm" style="width:500px;height:240px;"/>
+                <div class="text5">
+                    <h2>Macrominerals</h2>
+                    <p>
+                        Macrominerals are needed in larger amounts than trace minerals in order to perform their specific roles in your body.
+                    </p>
+                </div>
+            </div>
+            <div class="section3">
+                <div class="text5">
+                    <p>
+                        The macrominerals and some of their functions are:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Mineral</th>
+                            <th>Function</th>
+                        </tr>
+                        <tr>
+                            <td>Calcium</td>
+                            <td>Necessary for proper structure and function of bones and teeth. Assists in muscle function and blood vessel contraction.</td>
+                        </tr>
+                        <tr>
+                            <td>Phosphorus</td>
+                            <td>Part of bone and cell membrane structure.</td>
+                        </tr>
+                        <tr>
+                            <td>Magnesium</td>
+                            <td>Assists with over 300 enzyme reactions, including regulation of blood pressure.</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium</td>
+                            <td>Electrolyte that aids fluid balance and maintenance of blood pressure.</td>
+                        </tr>
+                        <tr>
+                            <td>Chloride</td>
+                            <td>Often found in combination with sodium. Helps maintain fluid balance and is used to make digestive juices.</td>
+                        </tr>
+                        <tr>
+                            <td>Potassium</td>
+                            <td>Electrolyte that maintains fluid status in cells and helps with nerve transmission and muscle function.</td>
+                        </tr>
+                        <tr>
+                            <td>Sulfur</td>
+                            <td>Part of every living tissue and contained in the amino acids methionine and cysteine.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="tminerals">
+                <img class="img6" src="images/tminerals.jpg" alt="tm"style="width:500px;height:240px;"/>
+                <div class="text6">
+                    <h2>Trace Minerals</h2>
+                    <p>
+                        Trace minerals are needed in smaller amounts than macrominerals but still enable important functions in your body. 
+                    </p>
+                </div>
+            </div>
+            <div class="section4">
+                <div class="text6">
+                    <p>
+                        The trace minerals and some of their functions are:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Mineral</th>
+                            <th>Function</th>
+                        </tr>
+                        <tr>
+                            <td>Iron</td>
+                            <td>Helps provide oxygen to muscles and assists in the creation of certain hormones.</td>
+                        </tr>
+                        <tr>
+                            <td>Manganese</td>
+                            <td>Assists in carbohydrate, amino acid and cholesterol metabolism.</td>
+                        </tr>
+                        <tr>
+                            <td>Copper</td>
+                            <td>Required for connective tissue formation, as well as normal brain and nervous system function.</td>
+                        </tr>
+                        <tr>
+                            <td>Zinc</td>
+                            <td>Necessary for normal growth, immune function and wound healing.</td>
+                        </tr>
+                        <tr>
+                            <td>Iodine</td>
+                            <td>Assists in thyroid regulation.</td>
+                        </tr>
+                        <tr>
+                            <td>Fluoride</td>
+                            <td>Necessary for the development of bones and teeth.</td>
+                        </tr>
+                        <tr>
+                            <td>Selenium</td>
+                            <td>Important for thyroid health, reproduction and defense against oxidative damage.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="antioxidants">
+                <img class="img7" src="images/antioxidants.jpg" alt="antioxidants" style="width:500px;height:240px;"/>
+                <div class="text7">
+                    <h2>Antioxidants</h2>
+                    <p>Some nutrients also act as antioxidants. These may be vitamins, minerals, proteins, or other types of molecules. They help the body remove toxic substances known as free radicals, or reactive oxygen species. If too many of these substances remain in the body, cell damage and disease can result.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">Diets</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Nutrition</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Learn More</h4>
+                        <ul>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="#">Terms of policy</a></li>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <p class="follow">Follow Us</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <br>
+                        <p class="subscribe">Subscribe</p>
+                        <a class="subscribe" href="subscribe.html">
+                            <button class="button1">
+                                Subscribe
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-protein Diet</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="External.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style type="text/css">
+
+        .section0 .text0 {
+            text-align: center;
+        }
+
+        .section1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section1 iframe {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        
+        .section1 .text1 {
+            margin-left: 40px;
+            margin-right: 0px;
+        }
+
+        .section2 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section2 .img2 {
+            margin-right: 10px;
+            margin-left: 25px;
+        }
+        
+        .section2 .text2 {
+            margin-left: 10px;
+            margin-right: 30px;
+        }
+
+        .navbar .megamenu{ padding: 1rem; }
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+            
+            .navbar .has-megamenu{position:static!important;}
+            .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+            
+        }	
+        /* ============ desktop view .end// ============ */
+        
+        
+        /* ============ mobile view ============ */
+        @media(max-width: 991px){
+            .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top:10px;
+            }
+        }
+        /* ============ mobile view .end// ============ */
+        </style>
+        
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                /////// Prevent closing from click inside dropdown
+                document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                    element.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                    });
+                })
+            }); 
+            // DOMContentLoaded  end
+        </script>
+</head>
+<body>
+    <header class="section-header py-4">
+		<div class="container">
+			<h2 class="logo">Logo</h2> 
+		</div>
+	</header> <!-- section-header.// -->
+    <div class = "container">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #6CC417;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navatigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="toggleMobileMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link active dropdown-toggle" href="Diet.html" data-bs-toggle="dropdown">Diet</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketodiet.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbdiet.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatdiet.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneandiet.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item active" href="highproteindiet.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonediet.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>    
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetariandiet.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="vegandiet.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneating.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfree.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Recipe</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketorecipe.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbrecipe.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatrecipe.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneanrecipe.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteinrecipe.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonerecipe.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>    
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetarianrecipe.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="veganrecipe.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneatingrecipe.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfreerecipe.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nutrition</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Macronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#carb">Carbohydrates</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fats">Fats</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#protein">Proteins</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fibre">Fiber</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#water">Water</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Micronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#fsvitamins">Fat-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#wsvitamins">Water-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#mminerals">Macrominerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#tminerals">Trace minerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#antioxidants">Antioxidants</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="subscribe.html">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <script src="main.js"></script>
+        <br>
+        <div class="section0">
+            <div class="text0">
+                <h1>The High-protein Diet</h1>
+            </div>
+        </div>
+     
+        <div class="section1">
+            <iframe width="2500" height="315" src="https://www.youtube.com/embed/BfM_mzXpqLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text1">
+                <h2>About</h2>
+                <p>
+                    Most people can follow a high-protein diet by eating meat, fish, dairy products, beans and legumes, eggs, and vegetables that are relatively rich in protein, such as asparagus and spinach.
+                    People on this diet will often choose to reduce their carbohydrate intake, which may involve limiting their consumption of highly processed foods, bread and other baked goods, candy, and white pasta and rice.
+                    There are some well-known high-protein diet plans, such as the Atkins diet. However, a person can increase their protein intake on their own with or without adjusting their intake of other food groups.
+                </p>
+            </div>
+        </div>
+        <div class="section2">
+            <img class="img3" src="images/highprotein1.jpg" style="width:500px;height:300px">
+            <div class="text2">
+                <h2>Foods to include and exclude</h2>
+                <p>
+                    Choosing the right foods when eating a high-protein diet is important for maximum effectiveness.
+                    Below are some excellent protein choices that could be suitable for a variety of dietary plans:
+                </p>
+                <ul>
+                    <li>eggs</li>
+                    <li>leaner cuts of beef</li>
+                    <li>chicken breasts</li>
+                    <li>turkey breasts</li>
+                    <li>beans, such as garbanzo beans or black beans</li>
+                    <li>shrimp</li>
+                    <li>nuts and seeds, such as pumpkin seeds, peanuts, and almonds</li>
+                    <li>fish, including salmon, flounder, and haddock</li>
+                    <li>sprouted grain bread, such as Ezekiel bread</li>
+                    <li>whey or plant protein shakes</li>
+                    <li>lentils</li>
+                    <li>quinoa</li>
+                    <li>chickpeas</li>
+                    <li>oats</li>
+                    <li>dairy products, such as Greek yogurt, cow’s milk, or cheese</li>
+                    <li>vegetables, including Brussels sprouts and broccoli</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="text3">
+                <p>
+                    People with necessary dietary restrictions should also continue to exclude unsuitable foods. For example, a person who has lactose intolerance should not use milk products to increase their protein intake.
+                    A person should generally also avoid the following foods as part of the high-protein diet:
+                </p>
+                <ul>
+                    <li>products that contain refined sugar, such as candy, baked goods, and sodas</li>
+                    <li>highly processed foods</li>
+                    <li>foods that manufacturers market as “diet” products, as they often contain excessive amounts of artificial sweetener</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section4">
+            <div class="text4">
+                <h2>Benefits</h2>
+                <p>
+                    In addition to aiding weight loss, protein provides the body with some essential benefits. The benefits of protein include:
+                </p>
+                <ul>
+                    <li>providing enzymes that help power thousands of chemical reactions throughout the body</li>
+                    <li>helping the body maintain and repair hair, skin, muscles, and bones</li>
+                    <li>certain proteins are necessary to produce hormones that help the body’s organs and cells communicate</li>
+                </ul>
+                <p>
+                    Protein also provides amino acids. There are 22 amino acids, nine of which are essential to obtain from the diet because the body does not produce them.
+                    Protein from animals tends to contain all of the amino acids, so people refer to it as a complete protein. In contrast, many plant proteins only provide some of the amino acids, meaning that people need to combine them with other protein sources to get all of the essential amino acids.
+                </p>
+            </div>
+        </div>
+        <div class="section5">
+            <div class="text5">
+                <h2>What does the science say?</h2>
+                <p>
+                    There has been a lot of research on the role of protein in short-term weight loss and muscle gain. However, the long-term effects of a high-protein diet require further study.
+                    Some studies suggest that health problems may potentially result from eating a high-protein diet for extended periods. The authors of a reviewTrusted Source paper focusing on the high-protein diet warned that it could lead to higher acid loads for the kidneys and that people may be at risk of the health conditions that come with eating high amounts of animal fat.
+                    In addition, diets that limit carbs may harm a person’s health. Children and teenagers are at particular risk of malnutrition from eating insufficient carbohydrate.
+                    Still, most research indicates that high-protein diets are beneficial for weight loss, at least in the short term.
+                </p>
+            </div>
+        </div>
+        <div class="section6">
+            <div class="text6">
+                <h2>How to eat a high-protein diet</h2>
+                <P>
+                    There are many possible ways to include more protein in the diet, even for those with other dietary restrictions.
+                    For example, people who follow a vegetarian or vegan diet or those who avoid dairy can still eat a high-protein diet.
+                    People can either adjust their current diet to include more protein or follow a specific high-protein diet plan.
+                    Taking the steps below may help a person when they start a high-protein diet:
+                </P>
+                <ul>
+                    <li>figuring out their individual protein needs, which will depend on their body weight</li>
+                    <li>making meal plans for the week</li>
+                    <li>finding and using high-quality proteins</li>
+                    <li>including at least 25–30 grams (g) of protein in each meal</li>
+                    <li>keeping a food journal to track the amount and types of food that they eat</li>
+                    <li>eating well-balanced meals</li>
+                    <li>including both plant and lean animal sources of protein in the diet</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Diets</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Terms of policy</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p class="follow">Follow Us</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <br>
+                    <p class="subscribe">Subscribe</p>
+                    <a class="subscribe" href="subscribe.html">
+                        <button class="button1">
+                            Subscribe
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

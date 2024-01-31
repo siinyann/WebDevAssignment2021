@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-carb Diet</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="External.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style type="text/css">
+
+        .section0 .text0 {
+            text-align: center;
+        }
+        
+        .section1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section1 iframe {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        
+        .section1 .text1 {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .section2 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section2 .img2 {
+            margin-right: 10px;
+            margin-left: 25px;
+        }
+        
+        .section2 .text2 {
+            margin-left: 10px;
+            margin-right: 30px;
+        }
+
+        .navbar .megamenu{ padding: 1rem; }
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+            
+            .navbar .has-megamenu{position:static!important;}
+            .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+            
+        }	
+        /* ============ desktop view .end// ============ */
+        
+        
+        /* ============ mobile view ============ */
+        @media(max-width: 991px){
+            .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top:10px;
+            }
+        }
+        /* ============ mobile view .end// ============ */
+        </style>
+        
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                /////// Prevent closing from click inside dropdown
+                document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                    element.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                    });
+                })
+            }); 
+            // DOMContentLoaded  end
+        </script>
+</head>
+<body>
+    <header class="section-header py-4">
+		<div class="container">
+			<h2 class="logo">Logo</h2> 
+		</div>
+	</header> <!-- section-header.// -->
+    <div class = "container">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #6CC417;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navatigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="toggleMobileMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Diet</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketodiet.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item active" href="lowcarbdiet.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatdiet.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneandiet.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteindiet.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonediet.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>    
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetariandiet.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="vegandiet.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneating.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfree.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Recipe</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketorecipe.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbrecipe.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatrecipe.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneanrecipe.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteinrecipe.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonerecipe.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>    
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetarianrecipe.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="veganrecipe.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneatingrecipe.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfreerecipe.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nutrition</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Macronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#carb">Carbohydrates</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fats">Fats</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#protein">Proteins</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fibre">Fiber</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#water">Water</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Micronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#fsvitamins">Fat-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#wsvitamins">Water-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#mminerals">Macrominerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#tminerals">Trace minerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#antioxidants">Antioxidants</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="subscribe.html">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <script src="main.js"></script>
+        <br>
+        <div class="section0">
+            <div class="text0">
+                <h1> The Low-carb Diet</h1>
+            </div>
+        </div>
+        <div class="section1">
+            <iframe width="1500" height="315" src="https://www.youtube.com/embed/Rg-dsFE_o3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text1">
+                <h2>Definition</h2>
+                <p>
+                    A low-carb diet limits carbohydrates — such as those found in grains, starchy vegetables and fruit — and emphasizes foods high in protein and fat. Many types of low-carb diets exist. Each diet has varying restrictions on the types and amounts of carbohydrates you can eat.
+                </p>
+                <h2>Purpose</h2>
+                <p>
+                    A low-carb diet is generally used for weight loss. Some low-carb diets may have health benefits beyond weight loss, such as reducing your risk of type 2 diabetes and metabolic syndrome.
+                </p>
+            </div>
+        </div>
+        <div class="section2">
+            <img class="img2" src="images/lowcarb1.jpg" style="width: 500px; height: 300px;">
+            <div class="text2">
+                <h2>Why you might follow a low-carb diet</h2>
+                <p>
+                    You might choose to follow a low-carb diet because you:
+                </p>
+                <ul>
+                    <li>Want a diet that restricts certain carbs to help you lose weight</li>
+                    <li>Want to change your overall eating habits</li>
+                    <li>Enjoy the types and amounts of foods featured in low-carb diets</li>
+                </ul>
+                <p>
+                    Check with your doctor before starting any weight-loss diet, especially if you have any health conditions, such as diabetes or heart disease.
+                </p>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="text3">
+                <h2>Diet details</h2>
+                <p>
+                    A low-carb diet restricts the amount of carbohydrates you eat. Carbohydrates are grouped as simple natural (lactose in milk and fructose in fruit), simple refined (table sugar), complex natural (whole grains or beans) and complex refined (white flour).
+                    Common sources of naturally occurring carbohydrates include:
+                </p>
+                <ul>
+                    <li>Grains</li>
+                    <li>Fruits</li>
+                    <li>Vegetables</li>
+                    <li>Milk</li>
+                    <li>Nuts</li>
+                    <li>Seeds</li>
+                    <li>Legumes (beans, lentils, peas)</li>
+                </ul>  
+            </div>
+        </div>
+        <div class="section4">
+            <div class="text4">
+                <p>
+                    In general, complex carbohydrates are digested more slowly and they have less effect on blood sugar than refined carbohydrates do. They also provide fiber.
+                    Refined carbohydrates such as sugar or white flour are often added to processed foods. Examples of foods with refined carbohydrates are white breads and pasta, cookies, cake, candy, and sugar-sweetened sodas and drinks.
+                    Your body uses carbohydrates as its main energy source. During digestion complex carbs are broken down into simple sugars (glucose) and release into your blood (blood glucose).
+                    Insulin is released to help glucose enter the body's cells, where it can be used for energy. Extra glucose is stored in the liver and muscles, and some is converted to body fat.
+                    A low-carb diet is intended to cause the body to burn stored fat for energy, which leads to weight loss.
+                </p>
+            </div>
+        </div>
+        <div class="section5">
+            <div class="text5">
+                <h2>Typical foods for a low-carb diet</h2>
+                <p>
+                    In general, a low-carb diet focuses on proteins and some nonstarchy vegetables. A low-carb diet generally limits grains, legumes, fruits, breads, sweets, pastas and starchy vegetables, and sometimes nuts and seeds. However, some low-carb diet plans allow small amounts of fruits, vegetables and whole grains.
+                    A daily limit of 0.7 to 2 ounces (20 to 57 grams) of carbohydrates is typical with a low-carb diet. These amounts of carbohydrates provide 80 to 240 calories. Some low-carb diets greatly restrict carbs during the initial phase of the diet and then gradually increase the number of allowed carbs.
+                    In contrast, the Dietary Guidelines for Americans recommends that carbohydrates make up 45% to 65% of your total daily calorie intake. So if you consume 2,000 calories a day, carbs would account for between 900 and 1,300 calories a day.
+                </p>
+            </div>
+        </div>
+        <div class="section6">
+            <div class="text6">
+                <h2>Results</h2>
+                <h2>Weight loss</h2>
+                <p>
+                    Most people can lose weight if they restrict calories and increase physical activity. To lose 1 to 1.5 pounds (0.5 to 0.7 kilogram) a week, you need to eat 500 to 750 fewer calories each day.
+                    Low-carb diets, especially very low-carb diets, may lead to greater short-term weight loss than do low-fat diets. But most studies have found that at 12 or 24 months, the benefits of a low-carb diet are not very large.
+                    Cutting calories and carbs may not be the only reason for the weight loss with low-carb diets. Some studies show that you may shed some weight because the extra protein and fat helps you feel full longer, which helps you eat less.
+                </p>
+            </div>
+        </div>
+        <div class="section7">
+            <div class="text7">
+                <h2>Other benefits</h2>
+                <p>
+                    Low-carb diets that emphasize healthy sources of carbs, fat and protein may help lower the risk of type 2 diabetes and heart disease. In fact, almost any diet that helps you shed excess weight may improve blood sugar and cholesterol levels, at least temporarily.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Diets</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Terms of policy</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p class="follow">Follow Us</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <br>
+                    <p class="subscribe">Subscribe</p>
+                    <a class="subscribe" href="subscribe.html">
+                        <button class="button1">
+                            Subscribe
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

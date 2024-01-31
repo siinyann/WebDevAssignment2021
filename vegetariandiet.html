@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian Diet</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="External.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style type="text/css">
+
+        .section0 .text0 {
+            text-align: center;
+        }
+
+        .section1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section1 iframe {
+            margin-right: 0px;
+            margin-left: 30px;
+        }
+        
+        .section1 .text1 {
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+
+        .section2 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section2 .img2 {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        
+        .section2 .text2 {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .navbar .megamenu{ padding: 1rem; }
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+
+            .navbar .has-megamenu{position:static!important;}
+            .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+        }
+        /* ============ desktop view .end// ============ */
+
+
+        /* ============ mobile view ============ */
+        @media(max-width: 991px){
+            .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top:10px;
+            }
+        }
+        /* ============ mobile view .end// ============ */
+        </style>
+
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                /////// Prevent closing from click inside dropdown
+                document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                    element.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                    });
+                })
+            });
+            // DOMContentLoaded  end
+        </script>
+</head>
+<body>
+    <header class="section-header py-4">
+		<div class="container">
+			<h2 class="logo">Logo</h2>
+		</div>
+	</header> <!-- section-header.// -->
+    <div class = "container">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #6CC417;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navatigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="toggleMobileMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Diet</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketodiet.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbdiet.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatdiet.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneandiet.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteindiet.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonediet.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item active" href="vegetariandiet.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="vegandiet.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneating.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfree.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row -->
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Recipe</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketorecipe.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbrecipe.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatrecipe.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneanrecipe.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteinrecipe.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonerecipe.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetarianrecipe.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="veganrecipe.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneatingrecipe.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfreerecipe.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row -->
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nutrition</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Macronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#carb">Carbohydrates</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fats">Fats</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#protein">Proteins</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fibre">Fiber</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#water">Water</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Micronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#fsvitamins">Fat-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#wsvitamins">Water-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#mminerals">Macrominerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#tminerals">Trace minerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#antioxidants">Antioxidants</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row -->
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="subscribe.html">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <script src="main.js"></script>
+        <br>
+        <div class="section0">
+            <div class="text0">
+                <h1>The Vegetarian Diet</h1>
+            </div>
+        </div>
+        <div class="section1">
+            <iframe width="2000" height="315" src="https://www.youtube.com/embed/CLO0Ow4S_C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text1">
+                <h2>What Is a Vegetarian Diet?</h2>
+                <p>
+                    The vegetarian diet involves abstaining from eating meat, fish and poultry.
+                    People often adopt a vegetarian diet for religious or personal reasons, as well as ethical issues, such as animal rights.
+                    Others decide to become vegetarian for environmental reasons, as livestock production increases greenhouse gas emissions, contributes to climate change and requires large amounts of water, energy and natural resources (2, 3Trusted Source).
+                    There are several forms of vegetarianism, each of which differs in their restrictions.
+                </p>
+            </div>
+        </div>
+        <div class="section2">
+            <img class="img2" src="images/vegetarian1.jpg" style="width:500px;height:300px">
+            <div class="text2">
+                <p>
+                    The most common types include:
+                </p>
+                <ul>
+                    <li><strong>Lacto-ovo-vegetarian diet:</strong> Eliminates meat, fish and poultry but allows eggs and dairy products.</li>
+                    <li><strong>Lacto-vegetarian diet:</strong> Eliminates meat, fish, poultry and eggs but allows dairy products.</li>
+                    <li><strong>Ovo-vegetarian diet:</strong> Eliminates meat, fish, poultry and dairy products but allows eggs.</li>
+                    <li><strong>Pescetarian diet:</strong> Eliminates meat and poultry but allows fish and sometimes eggs and dairy products.</li>
+                    <li><strong>Vegan diet:</strong> Eliminates meat, fish, poultry, eggs and dairy products, as well as other animal-derived products, such as honey.</li>
+                    <li><strong>Flexitarian diet:</strong> A mostly vegetarian diet that incorporates occasional meat, fish or poultry.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="text3">
+                <h2>Health Benefits</h2>
+                <p>
+                    Vegetarian diets are associated with a number of health benefits.
+                    In fact, studies show that vegetarians tend to have better diet quality than meat-eaters and a higher intake of important nutrients like fiber, vitamin C, vitamin E and magnesium.            
+                    A vegetarian diet may provide several other health boosts as well.
+                </p>
+            </div>
+        </div>
+        <div class="section4">
+            <div class="text4">
+                <h4>May Enhance Weight Loss</h4>
+                <p>
+                    Switching to a vegetarian diet can be an effective strategy if you’re looking to lose weight.
+                    In fact, one review of 12 studies noted that vegetarians, on average, experienced 4.5 more pounds (2 kg) of weight loss over 18 weeks than non-vegetarians.
+                    Similarly, a six-month study in 74 people with type 2 diabetes demonstrated that vegetarian diets were nearly twice as effective at reducing body weight than low-calorie diets.
+                    Plus, a study in nearly 61,000 adults showed that vegetarians tend to have a lower body mass index (BMI) than omnivores — BMI being a measurement of body fat based on height and weight.
+                </p>
+                <h4>May Reduce Cancer Risk</h4>
+                <p>
+                    Some research suggests that a vegetarian diet may be linked to a lower risk of cancer — including those of the breast, colon, rectum and stomach.
+                    However, current research is limited to observational studies, which cannot prove a cause-and-effect relationship. Keep in mind that some studies have turned up inconsistent findings.
+                    Therefore, more research is needed to understand how vegetarianism may impact cancer risk.
+                </p>
+            </div>
+        </div>
+        <div class="section5">
+            <div class="text5">
+                <h4>May Stabilize Blood Sugar</h4>
+                <p>
+                    Several studies indicate that vegetarian diets may help maintain healthy blood sugar levels.
+                    For instance, one review of six studies linked vegetarianism to improved blood sugar control in people with type 2 diabetes.
+                    Vegetarian diets may also prevent diabetes by stabilizing blood sugar levels in the long term.
+                    According to one study in 2,918 people, switching from a non-vegetarian to a vegetarian diet was associated with a 53% reduced risk of diabetes over an average of five years.
+                </p>
+                <h4>Promotes Heart Health</h4>
+                <p>
+                    Vegetarian diets reduce several heart disease risk factors to help keep your heart healthy and strong.
+                    One study in 76 people tied vegetarian diets to lower levels of triglycerides, total cholesterol and “bad” LDL cholesterol — all of which are risk factors for heart disease when elevated.
+                    Similarly, another recent study in 118 people found that a low-calorie vegetarian diet was more effective at reducing “bad” LDL cholesterol than a Mediterranean diet.
+                    Other research indicates that vegetarianism may be associated with lower blood pressure levels. High blood pressure is another key risk factor for heart disease.
+                </p>
+            </div>
+        </div>
+        <div class="section6">
+            <div class="text6">
+                <h2> Foods to Eat</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Fruits</td>
+                        <td>Apples, bananas, berries, oranges, melons, pears, peaches</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetables</td>
+                        <td>Leafy greens, asparagus, broccoli, tomatoes, carrots</td>
+                    </tr>
+                    <tr>
+                        <td>Grains</td>
+                        <td>Quinoa, barley, buckwheat, rice, oats</td>
+                    </tr>
+                    <tr>
+                        <td>Legumes</td>
+                        <td>Lentils, beans, peas, chickpeas.</td>
+                    </tr>
+                    <tr>
+                        <td>Nuts</td>
+                        <td>Almonds, walnuts, cashews, chestnuts</td>
+                    </tr>
+                    <tr>
+                        <td>Seeds</td>
+                        <td>Flaxseeds, chia and hemp seeds</td>
+                    </tr>
+                    <tr>
+                        <td>Healthy fats</td>
+                        <td>Coconut oil, olive oil, avocados</td>
+                    </tr>
+                    <tr>
+                        <td>Proteins</td>
+                        <td>Tempeh, tofu, seitan, natto, nutritional yeast, spirulina, eggs, dairy products</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="section7">
+            <div class="text7">
+                <h2>Foods to Avoid</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Meat</td>
+                        <td>Beef, veal and pork</td>
+                    </tr>
+                    <tr>
+                        <td>Poultry</td>
+                        <td>Chicken and turkey</td>
+                    </tr>
+                    <tr>
+                        <td>Fish and shellfish</td>
+                        <td>This restriction does not apply to pescetarians.</td>
+                    </tr>
+                    <tr>
+                        <td>Meat-based ingredients</td>
+                        <td>Gelatin, lard, carmine, isinglass, oleic acid and suet</td>
+                    </tr>
+                    <tr>
+                        <td>Eggs</td>
+                        <td>This restriction applies to vegans and lacto-vegetarians.</td>
+                    </tr>
+                    <tr>
+                        <td>Dairy products</td>
+                        <td>This restriction on milk, yogurt and cheese applies to vegans and ovo-vegetarians.</td>
+                    </tr>
+                    <tr>
+                        <td>Other animal products</td>
+                        <td>Vegans may choose to avoid honey, beeswax and pollen.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Diets</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Terms of policy</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p class="follow">Follow Us</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <br>
+                    <p class="subscribe">Subscribe</p>
+                    <a class="subscribe" href="subscribe.html">
+                        <button class="button1">
+                            Subscribe
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

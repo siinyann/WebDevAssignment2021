@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macronutrients</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="External.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style type="text/css">
+
+        #text1 {
+            text-align: center;
+        }
+
+        #carb {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 32px 20px 32px;
+        }
+        
+        #carb .img1 {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        
+        #carb .text1 {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        #fats{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: left;
+            margin: 0px 32px 20px 32px;
+        }
+        
+        #fats .img2 {
+            margin-right: 40px;
+            margin-left: 15px;
+        }
+        
+        #fats .text2 {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+
+        #protein {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 32px 20px 32px;
+        }
+        
+        #protein .img3 {
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+        
+        #protein .text2 {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        #fibre {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 32px 20px 32px;
+        }
+        
+        #fibre .img4 {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        
+        #fibre .text4 {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        
+        #video4 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 32px 20px 32px;
+        }
+        
+        #video4 iframe{
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+        
+        #video4 .text4 {
+            margin-left: 10px;
+            margin-right: 40px;
+        }
+
+        #water {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 32px 20px 32px;
+        }
+        
+        #water .img5 {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        
+        #water .text5 {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        #video5 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 32px 20px 32px;
+        }
+        
+        #video5 iframe{
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+        
+        #video5 .text5 {
+            margin-left: 10px;
+            margin-right: 40px;
+        }
+
+        .navbar .megamenu{ padding: 1rem; }
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+            
+            .navbar .has-megamenu{position:static!important;}
+            .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+            
+        }	
+        /* ============ desktop view .end// ============ */
+        
+        
+        /* ============ mobile view ============ */
+        @media(max-width: 991px){
+            .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top:10px;
+            }
+        }
+        /* ============ mobile view .end// ============ */
+        </style>
+        
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                /////// Prevent closing from click inside dropdown
+                document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                    element.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                    });
+                })
+            }); 
+            // DOMContentLoaded  end
+        </script>
+</head>
+<body>
+    <header class="section-header py-4">
+		<div class="container">
+			<h2 class="logo">Logo</h2> 
+		</div>
+	</header> <!-- section-header.// -->
+    <div class = "container">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #6CC417;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navatigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="toggleMobileMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Diet</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketodiet.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbdiet.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatdiet.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneandiet.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteindiet.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonediet.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>    
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetariandiet.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="vegandiet.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneating.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfree.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Recipe</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketorecipe.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbrecipe.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatrecipe.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneanrecipe.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteinrecipe.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonerecipe.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>    
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetarianrecipe.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="veganrecipe.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneatingrecipe.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfreerecipe.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Nutrition</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Macronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#carb">Carbohydrates</a></li>
+                                            <li><a class="dropdown-item" href="#fats">Fats</a></li>
+                                            <li><a class="dropdown-item" href="#protein">Proteins</a></li>
+                                            <li><a class="dropdown-item" href="#fibre">Fibre</a></li>
+                                            <li><a class="dropdown-item" href="#water">Water</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Micronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#fsvitamins">Fat-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#wsvitamins">Water-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#mminerals">Macrominerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#tminerals">Trace minerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#antioxidants">Antioxidants</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="subscribe.html">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <script src="main.js"></script>
+        <div id="text1">
+            <h1>Macronutrients</h1>
+            <p>Macronutrients are nutrients that people need in relatively large quantities.</p>
+        </div>
+        <div id="carb">
+            <img class="img1" src="images/carb.jpg" alt="carbohydrates" style="width:500px;height:300px;"/>
+            <div class="text1">
+                <h2>Carbohydrates</h2>
+                <p>
+                    Sugar, starch, and fiber are types of carbohydrates.
+                    <strong>Sugars</strong> are simple carbs. The body quickly breaks down and absorbs sugars and processed starch. They can provide rapid energy, but they do not leave a person feeling full. They can also cause a spike in blood sugar levels. Frequent sugar spikes increase the risk of type 2 diabetes and its complications.
+                    <strong>Fiber</strong> is also a carbohydrate. The body breaks down some types of fiber and uses them for energy; others are metabolized by gut bacteria, while other types pass through the body.
+                    <strong>Fiber and unprocessed starch</strong> are complex carbs. It takes the body some time to break down and absorb complex carbs. After eating fiber, a person will feel full for longer. Fiber may also reduce the risk of diabetes, cardiovascular disease, and colorectal cancer. Complex carbs are a more healthful choice than sugars and refined carbs.  
+                </p>
+            </div>  
+        </div>
+        <div id="fats">
+            <img class="img2"src="images/fats.jpg" alt="fats" style="width:500px;height:300px;"/>
+            <div class="text2">
+                <h2>Fats</h2>
+                Fats are essential for:<br>
+                <ul>
+                    <li>lubricating joints</li>
+                    <li>helping organs produce hormones</li>
+                    <li>enabling the body to absorb certain vitamins</li>
+                    <li>reducing inflammation</li>
+                    <li>preserving brain health</li>
+                </ul>
+                <p>
+                    Too much fat can lead to obesity, high cholesterol, liver disease, and other health problems.
+                    However, the type of fat a person eats makes a difference. Unsaturated fats, such as olive oil, are more healthful than saturated fats, which tend to come from animals
+                </p>
+            </div>
+        </div>
+        <div id="protein">
+            <img class="img3" src="images/protein.jpeg" alt="proteins" style="width:500px;height:300px;"/>
+            <div class="text3">
+                <h2>Proteins</h2>
+                <p>Proteins consist of amino acids, which are organic compounds that occur naturally.
+                    There are 20 amino acids. Some of these are essential, which means people need to obtain them from food. The body can make the others.
+                    Some foods provide complete protein, which means they contain all the essential amino acids the body needs. Other foods contain various combinations of amino acids.
+                    Most plant-based foods do not contain complete protein, so a person who follows a vegan diet needs to eat a range of foods throughout the day that provides the essential amino acids.
+                </p>
+            </div>
+        </div>
+        <div id="fibre">
+            <img class="img4" src="images/fiber.jpg" alt="fibre" style="width:500px;height:240px;"/>
+            <div class="text4">
+                <h2>Fibre</h2>
+                <p>
+                    Fibre is a mixture of different carbohydrates which are not digested like other nutrients but pass through the gut nearly unchanged. Foods rich in fibre are vegetables like cabbage,carrots, cassava; fruits like banana and avocado; peas and beans; whole-grain cereals like wheat flour and refined maize or sorghum.
+                </p>
+                <h4>Including fibre in the diet</h4>
+                <p>
+                    Fibre should be included in the diet for the following reasons:
+                </p>
+                <ul>
+                    <li>Fibre makes food bulky or bigger — this can help a person who is overweight to eat less food</li>
+                    <li>Fibre makes the faeces soft and bulky; this can help prevent constipation</li>
+                    <li>Fibre slows the absorption of nutrients, so it helps nutrients to enter the blood stream slowly. This is important for patients with diabetes mellitus.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="water">
+            <img class="img5" src="images/water.jpg" alt="water" style="width:500px;height:240px;">
+            <div class="text5">
+                <h2>Water</h2>
+                <p>
+                    The adult human body is up to 60% water, and it needs water for many processes. Water contains no calories, and it does not provide energy.
+                    Many people recommend consuming 2 liters, or 8 glasses, of water a day, but it can also come from dietary sources, such as fruit and vegetables. Adequate hydration will result in pale yellow urine.
+                    Requirements will also depend on an individual’s body size and age, environmental factors, activity levels, health status, and so on.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Diets</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Terms of policy</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p class="follow">Follow Us</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <br>
+                    <p class="subscribe">Subscribe</p>
+                    <a class="subscribe" href="subscribe.html">
+                        <button class="button1">
+                            Subscribe
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

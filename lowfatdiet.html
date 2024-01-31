@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-fat Diet</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="External.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style type="text/css">
+
+        .section0 .text0 {
+            text-align: center;
+        }
+        
+        .section1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section1 iframe {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        
+        .section1 .text1 {
+            margin-left: 20px;
+            margin-right: 0px;
+        }
+
+        .section2 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section2 .img2 {
+            margin-right: 10px;
+            margin-left: 25px;
+        }
+        
+        .section2 .text2 {
+            margin-left: 10px;
+            margin-right: 30px;
+        }
+
+        .navbar .megamenu{ padding: 1rem; }
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+            
+            .navbar .has-megamenu{position:static!important;}
+            .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+            
+        }	
+        /* ============ desktop view .end// ============ */
+        
+        
+        /* ============ mobile view ============ */
+        @media(max-width: 991px){
+            .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top:10px;
+            }
+        }
+        /* ============ mobile view .end// ============ */
+        </style>
+        
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                /////// Prevent closing from click inside dropdown
+                document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                    element.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                    });
+                })
+            }); 
+            // DOMContentLoaded  end
+        </script>
+</head>
+<body>
+    <header class="section-header py-4">
+		<div class="container">
+			<h2 class="logo">Logo</h2> 
+		</div>
+	</header> <!-- section-header.// -->
+    <div class = "container">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #6CC417;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navatigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="toggleMobileMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Diet</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketodiet.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbdiet.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item active" href="lowfatdiet.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneandiet.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteindiet.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonediet.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>    
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetariandiet.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="vegandiet.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneating.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfree.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Recipe</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketorecipe.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbrecipe.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatrecipe.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneanrecipe.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteinrecipe.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonerecipe.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>    
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetarianrecipe.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="veganrecipe.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneatingrecipe.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfreerecipe.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nutrition</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Macronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#carb">Carbohydrates</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fats">Fats</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#protein">Proteins</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fibre">Fiber</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#water">Water</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Micronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#fsvitamins">Fat-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#wsvitamins">Water-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#mminerals">Macrominerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#tminerals">Trace minerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#antioxidants">Antioxidants</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row --> 
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="subscribe.html">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <script src="main.js"></script>
+        <br>
+        <div class="section0">
+            <div class="text0">
+                <h1>The Low-fat Diet</h1>
+            </div>
+        </div>
+        <div class="section1">
+            <iframe width="2000" height="315" src="https://www.youtube.com/embed/_vZVyBqpZcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text1">
+                <h2>What is a low-fat diet?</h2>
+                <p>
+                    A low-fat diet is an eating plan that is low in total fat, unhealthy fat, and cholesterol. You may need to follow a low-fat diet if you have trouble digesting or absorbing fat. You may also need to follow this diet if you have high cholesterol. You can also lower your cholesterol by increasing the amount of fiber in your diet. Soluble fiber is a type of fiber that helps to decrease cholesterol levels.<br><br>
+                </p>
+                <h2>What do I need to know about the different types of fat in food?</h2>
+            </div>
+        </div>
+        <div class="section2">
+            <img class="img2" src="images/lowfat1.jpg" style="width:500px;height:300px">
+            <div class="text2">
+                <h4>Limit unhealthy fats</h4>
+                <p>
+                    A diet that is high in cholesterol, saturated fat, and trans fat may cause unhealthy cholesterol levels. Unhealthy cholesterol levels increase your risk of heart disease.
+                </p>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Tips</th>
+                    </tr>
+                    <tr>
+                        <td>Cholesterol</td>
+                        <td>Limit intake of cholesterol to less than 200 mg per day. Cholesterol is found in meat, eggs, and dairy.</td>
+                    </tr>
+                    <tr>
+                        <td>Saturated fat</td>
+                        <td>Limit saturated fat to less than 7% of your total daily calories. Ask your dietitian how many calories you need each day. Saturated fat is found in butter, cheese, ice cream, whole milk, and palm oil. Saturated fat is also found in meat, such as beef, pork, chicken skin, and processed meats. Processed meats include sausage, hot dogs, and bologna.</td>
+                    </tr>                    
+                    <tr>
+                        <td>Trans fat</td>
+                        <td>Avoid trans fat as much as possible. Trans fat is used in fried and baked foods. Foods that say trans fat free on the label may still have up to 0.5 grams of trans fat per serving.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="section3">
+            <div class="text3">
+                <h4>Include healthy fats</h4>
+                <p>
+                    Replace foods that are high in saturated and trans fat with foods high in healthy fats. This may help to decrease high cholesterol levels.
+                </p>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Tips</th>
+                    </tr>
+                    <tr>
+                        <td>Monounsaturated fats</td>
+                        <td>These are found in avocados, nuts, and vegetable oils, such as olive, canola, and sunflower oil.</td>
+                    </tr>
+                    <tr>
+                        <td>Polyunsaturated fats</td>
+                        <td>These can be found in vegetable oils, such as soybean or corn oil. Omega-3 fats can help to decrease the risk of heart disease. Omega-3 fats are found in fish, such as salmon, herring, trout, and tuna. Omega-3 fats can also be found in plant foods, such as walnuts, flaxseed, soybeans, and canola oil.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="section4">
+            <div class="text4">
+                <h2>What foods should I limit or avoid?</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Grains</td>
+                        <td>Snacks that are made with partially hydrogenated oils, such as chips, regular crackers, and butter-flavored popcorn. High-fat baked goods, such as biscuits, croissants, doughnuts, pies, cookies, and pastries.</td>
+                    </tr>
+                    <tr>
+                        <td>Dairy</td>
+                        <td>Whole milk, 2% milk, and yogurt and ice cream made with whole milk. Half and half creamer, heavy cream, and whipping cream. Cheese, cream cheese, and sour cream.</td>
+                    </tr>
+                    <tr>
+                        <td>Meats and proteins</td>
+                        <td>High-fat cuts of meat (T-bone steak, regular hamburger, and ribs).Fried meat, poultry (turkey and chicken), and fish. Poultry (chicken and turkey) with skin. Cold cuts (salami or bologna), hot dogs, bacon, and sausage. Whole eggs and egg yolks.</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetables and fruits with added fat</td>
+                        <td>Fried vegetables or vegetables in butter or high-fat sauces, such as cream or cheese sauces. Fried fruit or fruit served with butter or cream.</td>
+                    </tr>
+                    <tr>
+                        <td>Fats</td>
+                        <td>Butter, stick margarine, and shortening. Coconut, palm oil, and palm kernel oil.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="section5">
+            <div class="text5">
+                <h2>What foods should I include?</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Grains</td>
+                        <td>Whole-grain breads, cereals, pasta, and brown rice. Low-fat crackers and pretzels.</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetables and fruits</td>
+                        <td>Fresh, frozen, or canned vegetables (no salt or low-sodium). Fresh, frozen, dried, or canned fruit (canned in light syrup or fruit juice). Avocado.</td>
+                    </tr>
+                    <tr>
+                        <td>Low-fat dairy products</td>
+                        <td>Nonfat (skim) or 1% milk. Nonfat or low-fat cheese, yogurt, and cottage cheese.</td>
+                    </tr>
+                    <tr>
+                        <td>Meats and proteins</td>
+                        <td>Chicken or turkey with no skin. Baked or broiled fish. Lean beef and pork (loin, round, extra lean hamburger). Beans and peas, unsalted nuts, soy products. Egg whites and substitutes. Seeds and nuts.</td>
+                    </tr>
+                    <tr>
+                        <td>Fats</td>
+                        <td>Unsaturated oil, such as canola, olive, peanut, soybean, or sunflower oil. Soft or liquid margarine and vegetable oil spread. Low-fat salad dressing.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="section6">
+            <div class="text6">
+                <h2>What are some other ways I can decrease fat?</h2>
+                <table>
+                    <tr>
+                        <th>Tips</th>
+                        <th>Meaning</th>
+                    </tr>
+                    <tr>
+                        <td>Read food labels before you buy foods.</td>
+                        <td>Choose foods that have less than 30% of calories from fat. Choose low-fat or fat-free dairy products. Remember that fat free does not mean calorie free. These foods still contain calories, and too many calories can lead to weight gain.</td>
+                    </tr>
+                    <tr>
+                        <td>Trim fat from meat and avoid fried food.</td>
+                        <td>Trim all visible fat from meat before you cook it. Remove the skin from poultry. Do not fry meat, fish, or poultry. Bake, roast, boil, or broil these foods instead. Avoid fried foods. Eat a baked potato instead of French fries. Steam vegetables instead of sautéing them in butter.</td>
+                    </tr>
+                    <tr>
+                        <td>Add less fat to foods.</td>
+                        <td>Use imitation bacon bits on salads and baked potatoes instead of regular bacon bits. Use fat-free or low-fat salad dressings instead of regular dressings. Use low-fat or nonfat butter-flavored topping instead of regular butter or margarine on popcorn and other foods.</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </div>
+        <br>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Diets</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Terms of policy</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p class="follow">Follow Us</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <br>
+                    <p class="subscribe">Subscribe</p>
+                    <a class="subscribe" href="subscribe.html">
+                        <button class="button1">
+                            Subscribe
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone Diet</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="External.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style type="text/css">
+
+        .section0 .text0 {
+            text-align: center;
+        }
+
+        .section1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section1 .img1 {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        
+        .section1 .text1 {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .section2 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section2 iframe {
+            margin-right: 10px;
+            margin-left: 25px;
+        }
+        
+        .section2 .text2 {
+            margin-left: 10px;
+            margin-right: 30px;
+        }
+
+        .navbar .megamenu{ padding: 1rem; }
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+
+            .navbar .has-megamenu{position:static!important;}
+            .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+        }
+        /* ============ desktop view .end// ============ */
+
+
+        /* ============ mobile view ============ */
+        @media(max-width: 991px){
+            .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top:10px;
+            }
+        }
+        /* ============ mobile view .end// ============ */
+        </style>
+
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                /////// Prevent closing from click inside dropdown
+                document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                    element.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                    });
+                })
+            });
+            // DOMContentLoaded  end
+        </script>
+</head>
+<body>
+    <header class="section-header py-4">
+		<div class="container">
+			<h2 class="logo">Logo</h2>
+		</div>
+	</header> <!-- section-header.// -->
+    <div class = "container">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #6CC417;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navatigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="toggleMobileMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Diet</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketodiet.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbdiet.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatdiet.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneandiet.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteindiet.html">High-protein</a></li>
+                                            <li><a class="dropdown-item active" href="zonediet.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetariandiet.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="vegandiet.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneating.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfree.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row -->
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Recipe</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketorecipe.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbrecipe.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatrecipe.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneanrecipe.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteinrecipe.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonerecipe.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetarianrecipe.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="veganrecipe.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneatingrecipe.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfreerecipe.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row -->
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nutrition</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Macronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#carb">Carbohydrates</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fats">Fats</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#protein">Proteins</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fibre">Fiber</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#water">Water</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Micronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#fsvitamins">Fat-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#wsvitamins">Water-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#mminerals">Macrominerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#tminerals">Trace minerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#antioxidants">Antioxidants</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row -->
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="subscribe.html">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <script src="main.js"></script>
+        <br>
+        <div class="section0">
+            <div class="text0">
+                <h1>The Zone Diet</h1>
+            </div>
+        </div>
+        <div class="section1">
+            <img class="img1" src="images/zone1.jpg" style="width:500px;height:300px">
+            <div class="text1">
+                <h2>What is the Zone Diet?</h2>
+                <p>
+                    The Zone Diet instructs its followers to stick to eating a specific ratio of 40% carbs, 30% protein and 30% fat.
+                    As part of the diet, carbs should have a low glycemic index, which means they provide a slow release of sugar into the blood to keep you fuller for longer. Protein should be lean and fat should be mostly monounsaturated.           
+                    The Zone Diet was developed more than 30 years ago by Dr. Barry Sears, an American biochemist. His best-selling book The Zone was published in 1995.
+                    Dr. Sears developed this diet after losing family members to early deaths from heart attacks, and felt that he was at risk unless he found a way to fight it.           
+                    The Zone Diet claims to reduce the inflammation in your body. Dr. Sears proposed inflammation was the reason people gain weight, become sick and age faster.
+                    Proponents of the diet claim that once you reduce inflammation, you will lose fat at the fastest rate possible, slow down aging, reduce your risk of chronic disease and improve your performance.            
+                </p>
+            </div>
+        </div>
+        <div class="section2">
+            <iframe width="2000" height="315" src="https://www.youtube.com/embed/Zxuwkptf-Es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text2">
+                <h2>How do you follow the Zone Diet?</h2>
+                <p>
+                    The Zone Diet has no specific phases and is designed to be followed for a lifetime.
+                    There are two ways to follow the Zone Diet: the hand-eye method, or using Zone food blocks.
+                    Most people start with the hand-eye method and progress to using Zone food blocks later, since it is more advanced. You can switch between both methods whenever you feel like, since they each have their own benefits.
+                </p>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="text3">
+                <h4>The hand-eye method</h4>
+                <p>
+                    The hand-eye method is the easiest way to start the Zone Diet.
+                    As the name suggests, your hand and eye are the only tools you need to get started, although wearing a watch is also recommended to keep an eye on when to eat.
+                    In this method, your hand takes on several uses. You use it to determine your portion sizes. Your five fingers remind you to eat five times a day and never go without food for five hours.           
+                    Meanwhile, you use your eye to estimate portions on your plate. To design a Zone-friendly plate, you need to first divide your plate into thirds.            
+                </p>
+                <ul>
+                    <li><strong>One-third lean protein:</strong> One-third of your plate should have a source of lean protein, roughly the size and thickness of your palm.</li>
+                    <li><strong>Two-thirds carbs:</strong> Two-thirds of your plate should be filled with carbs with a low glycemic index.</li>
+                    <li><strong>A little fat:</strong>Add a dash of monounsaturated fat to your plate, such as olive oil, avocado or almonds.</li>
+                </ul>
+                <p>
+                    The hand-eye method is designed to be a simple way for a beginner to follow the Zone Diet.
+                    It is also flexible and allows you to eat out at restaurants while on the Zone Diet, by using your hand and eyes as tools to choose options that fit Zone recommendations.
+                    You can learn more about eating out on this diet here.
+                </p>
+            </div>
+        </div>
+        <div class="section4">
+            <div class="text4">
+                <h4>The Zone food block method</h4>
+                <p>
+                    Zone food blocks allow you to personalize the Zone Diet to your body by calculating how many grams of protein, carbs and fat you can have per day.
+                    The number of Zone blocks you should eat per day depends on your weight, height, waist and hip measurements. You can calculate your number here.
+                    The average male eats 14 Zone blocks per day, while the average female eats 11 Zone blocks per day.
+                    A main meal such as breakfast, lunch or dinner contains three to five Zone blocks, while a snack always contains one Zone block.
+                    Each Zone block is made of a protein block, a fat block and a carb block.
+                </p>
+                <ul>
+                    <li><strong>Protein block:</strong>Contains 7 grams of protein.</li>
+                    <li><strong>Carb block:</strong>Contains 9 grams of carbs.</li>
+                    <li><strong>Fat block:</strong>Contains 1.5 grams of fat.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section5">
+            <div class="text5">
+                <h4>What foods can you eat on the Zone Diet?</h4>
+                <p>                
+                    A lot of the favorable Zone Diet food choices are similar to those of the Mediterranean Diet, which is one of the healthiest diets on the planet.
+                    In fact, the creator of the Zone Diet has recently released a new book called The Mediterranean Zone, in which he covers the similarities and benefits of the two diets.
+                </p>
+                <h4>Protein</h4>
+                <p>
+                    Protein options in the Zone Diet should be lean. Good options include:
+                </p>
+                <ul>
+                    <li>Lean beef, pork, lamb, veal and game</li>
+                    <li>Skinless chicken and turkey breast</li>
+                    <li>Fish and shellfish</li>
+                    <li>Vegetarian protein, tofu, other soy products</li>
+                    <li>Egg whites</li>
+                    <li>Low-fat cheeses</li>
+                    <li>Low-fat milk and yogurt</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section6">
+            <div class="text6">
+                <h4>Fat</h4>
+                <p>
+                    The Zone Diet encourages choosing a type of monounsaturated fat. Good options include:
+                </p>
+                <ul>
+                    <li>Avocados</li>
+                    <li>Nuts, such as macadamia, peanuts, cashews, almonds or pistachios</li>
+                    <li>Peanut butter</li>
+                    <li>Tahini</li>
+                    <li>Oils such as canola oil, sesame oil, peanut oil and olive oil</li>
+                </ul>
+                <h4>Carbs</h4>
+                <p>
+                    The Zone Diet encourages its followers to choose vegetables with a low glycemic index and a little fruit.
+                    Good options include:
+                </p>
+                <ul>
+                    <li>Fruit such as berries, apples, oranges, plums and more</li>
+                    <li>Vegetables such as cucumbers, peppers, spinach, tomatoes, mushrooms, yellow squash, chickpeas and more</li>
+                    <li>Grains, such as oatmeal and barley</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section7">
+            <div class="text7">
+                <h4>What can’t you eat on the Zone Diet?</h4>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>High-sugar fruits</td>
+                        <td>Such as bananas, grapes, raisins, dried fruits and mangoes.</td>
+                    </tr>
+                    <tr>
+                        <td>High-sugar or starchy vegetables</td>
+                        <td>Like peas, corn, carrots and potatoes.</td>
+                    </tr>
+                    <tr>
+                        <td>Refined and processed carbs</td>
+                        <td>Bread, bagels, pasta, noodles and other white-flour products.</td>
+                    </tr>
+                    <tr>
+                        <td>Other processed foods</td>
+                        <td>Including breakfast cereals and muffins.</td>
+                    </tr>
+                    <tr>
+                        <td>Foods with added sugar</td>
+                        <td>Such as candy, cakes and cookies.</td>
+                    </tr>
+                    <tr>
+                        <td>Soft drinks</td>
+                        <td>Neither sugar-sweetened nor sugar-free drinks are recommended.</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee and tea</td>
+                        <td>Keep these to a minimum, since water is the beverage of choice.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="section8">
+            <div class="text8">
+                <h4>How does the Zone Diet work?</h4>
+                <p>
+                    The Zone Diet claims to optimize your hormones to allow your body to enter a state called “the Zone.” This is where your body is optimized to control inflammation from your diet.
+                    The purported benefits of being in “the Zone” are:
+                </p>
+                <ul>
+                    <li>Losing extra body fat as fast as possible</li>
+                    <li>Maintaining wellness into older age</li>
+                    <li>Slowing down the rate of aging</li>
+                    <li>Performing better and thinking faster</li>
+                </ul>
+                <p>
+                    Dr. Sears recommends testing three blood values to determine whether you are in “the Zone.”
+                </p>
+                <h4>Benefits of the Zone Diet</h4>
+                <p>
+                    Following the Zone Diet has many benefits.
+                    Unlike other diets, the Zone Diet does not strictly restrict any food choices.
+                    However, it does recommend against options that are unfavorable, such as added sugar and processed foods.
+                    This can make the Zone Diet more appealing than other diets for people who struggle with food restrictions.
+                    The recommended food choices for the Zone Diet are quite similar to the Mediterranean Diet. The Mediterranean Diet is supported by evidence as being one of the best for your long-term health.
+                    The Zone Diet also provides you with flexibility, since there are two methods of following the diet.
+                    The Zone Food Block method can also help fat loss because it controls how many calories you eat per day. It is well known that controlling your calorie intake helps with weight loss.
+                    If you want to find out how many calories you need to eat per day to maintain and lose weight, you can find out here.
+                </p> 
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Diets</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Terms of policy</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p class="follow">Follow Us</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <br>
+                    <p class="subscribe">Subscribe</p>
+                    <a class="subscribe" href="subscribe.html">
+                        <button class="button1">
+                            Subscribe
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

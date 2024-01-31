@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediterranean Recipe</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="External.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style type="text/css">
+
+        .section0 .text0 {
+            text-align: center;
+        }
+
+        .section1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section1 .img1 {
+            margin-right: 150px;
+            margin-left: 0px;
+        }
+        
+        .section1 .text1 {
+            margin-left: 0px;
+            margin-right: 100px;
+        }
+
+        .section4 {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+        }
+        
+        .section4 .img2 {
+            margin-right: 0px;
+            margin-left: 150px;
+        }
+        
+        .section4 .text4 {
+            margin-left: 0px;
+            margin-right: 200px;
+        }
+
+        .section7 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 100px 30px 0px;
+        }
+        
+        .section7 .iframe{
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        
+        .section7 .text7 {
+            margin-left: 50px;
+            margin-right: 0px;
+        }
+
+        .navbar .megamenu{ padding: 1rem; }
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+
+            .navbar .has-megamenu{position:static!important;}
+            .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+        }
+        /* ============ desktop view .end// ============ */
+
+
+        /* ============ mobile view ============ */
+        @media(max-width: 991px){
+            .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top:10px;
+            }
+        }
+        /* ============ mobile view .end// ============ */
+        </style>
+
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                /////// Prevent closing from click inside dropdown
+                document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                    element.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                    });
+                })
+            });
+            // DOMContentLoaded  end
+        </script>
+</head>
+<body>
+    <header class="section-header py-4">
+		<div class="container">
+			<h2 class="logo">Logo</h2>
+		</div>
+	</header> <!-- section-header.// -->
+    <div class = "container">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #6CC417;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navatigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="toggleMobileMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Diet</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketodiet.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbdiet.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatdiet.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item" href="mediterraneandiet.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteindiet.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonediet.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetariandiet.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="vegandiet.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneating.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfree.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row -->
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Recipe</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-carb diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="ketorecipe.html">Ketogenic</a></li>
+                                            <li><a class="dropdown-item" href="lowcarbrecipe.html">Low-carb</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Low-fat diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="lowfatrecipe.html">Low-fat</a></li>
+                                            <li><a class="dropdown-item active" href="mediterraneanrecipe.html">Mediterranean</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">High-protein diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="highproteinrecipe.html">High-protein</a></li>
+                                            <li><a class="dropdown-item" href="zonerecipe.html">Zone</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Plant-based diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="vegetarianrecipe.html">Vegetarian</a></li>
+                                            <li><a class="dropdown-item" href="veganrecipe.html">Vegan</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-2 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Special diets</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="cleaneatingrecipe.html">Clean eating</a></li>
+                                            <li><a class="dropdown-item" href="dairyfreerecipe.html">Dairy-free</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row -->
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nutrition</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Macronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#carb">Carbohydrates</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fats">Fats</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#protein">Proteins</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#fibre">Fiber</a></li>
+                                            <li><a class="dropdown-item" href="macronutrients.html#water">Water</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                                <div class="col-md-4 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">Micronutrients</h6>
+                                        <ul class="list-unstyled">
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#fsvitamins">Fat-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#wsvitamins">Water-soluble vitamins</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#mminerals">Macrominerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#tminerals">Trace minerals</a></li>
+                                            <li><a class="dropdown-item" href="micronutrients.html#antioxidants">Antioxidants</a></li>
+                                        </ul>
+                                    </div>  <!-- col-megamenu.// -->
+                                </div><!-- end col-3 -->
+                            </div><!-- end row -->
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="subscribe.html">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <script src="main.js"></script>
+        <br>
+        <div class="section0">
+            <div class="text0">
+                <h1>Mediterranean Recipes</h1>
+            </div>
+        </div>
+        <div class="section1">
+            <img src="images/mediterraneanrecipe1.jpg"class="img1" style="width:500px;height:300px">
+            <div class="text1">
+                <h2>Grilled Salmon With Tomato-Avocado Salsa</h2>
+                <h2>Recipe Summary</h2>
+                <p>
+                    Active Time: 20 Mins <br>
+                    Total Time: 20 Mins <br>
+                    Yield: Serves 4 (serving size: 1 salmon fillet and 3/4 cup salsa) <br>
+                </p>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="text2">
+                <h4>Ingredients</h4>
+                <ol>
+                    <li>2 cups cubed avocado</li>
+                    <li>1 cup halved yellow heirloom cherry tomatoes</li>
+                    <li>2 tablespoons chopped fresh cilantro</li>
+                    <li>1/2 teaspoon chopped serrano chile</li>
+                    <li>1 1/2 tablespoons sliced shallot </li>
+                    <li>1 teaspoon fresh lime juice</li>
+                    <li>1 teaspoon kosher salt, divided</li>
+                    <li>3/4 teaspoon black pepper, divided </li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>4 (6-oz.) skin-on salmon fillets</li>
+                </ol>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="text3">
+                <h4>Directions</h4>
+                <h5>Step 1</h5>
+                <p>
+                    Preheat grill to medium-high (about 450°F). Combine avocado, tomatoes, cilantro, serrano, and shallot in a medium bowl. Whisk together lime juice, 1/4 teaspoon salt, and 1/4 teaspoon pepper in a small bowl; drizzle over avocado mixture, and stir to coat.
+                </p>
+                <h5>Step 2</h5>
+                <p>
+                    Brush olive oil on both sides of salmon; sprinkle with remaining 3/4 teaspoon salt and remaining 1/2 teaspoon pepper.
+                </p>                
+                <h5>Step 3</h5>
+                <p>Place salmon, skin side down, on grill; cook, flipping once, until salmon is opaque and cooked through, about 3 minutes per side. Serve salmon topped with salsa.</p>
+            </div>
+        </div>
+        <div class="section4">
+            <img src="images/mediterraneanrecipe2.jpg"class="img2" style="width:500px;height:300px">
+            <div class="text4">
+                <h2>Olive Pesto Smashed Potatoes</h2>
+                <h4>Recipe Summary</h4>
+                <p>
+                    Total: 2 hrs 15 mins
+                    Yield: Serves 4
+                </p>
+            </div>
+        </div>
+        <div class="section5">
+            <div class="text5">
+                <h4>Ingredients</h4>
+                <ol>
+                    <li>2 garlic cloves, minced</li>
+                    <li>¼ cup chopped fresh basil leaves</li>
+                    <li>1 cup kalamata olives, pitted and patted dry</li>
+                    <li>¼ cup extra-virgin olive oil</li>
+                    <li>¼ cup freshly grated parmesan cheese</li>
+                    <li>12 small red or Yukon Gold potatoes (2 to 3 in. diameter), well-scrubbed</li>
+                    <li>2 tablespoons minced flat-leaf parsley</li>
+                </ol>
+            </div>
+        </div>
+        <div class="section6">
+            <div class="text6">
+                <h4>Directions</h4>
+                <h5>Step 1</h5>
+                <p>
+                    Make pesto: Purée garlic and basil in a food processor. Add olives and oil and pulse to a smooth, thick paste. Turn into a bowl and stir in cheese.
+                </p>
+                <h5>Step 2</h5>
+                <p>
+                    Put potatoes in a large pot on the stove with generously salted water to cover. Bring almost to a boil and cook until easily pierced with a knife, 15 to 20 minutes. Drain. When cool enough to handle, press each between your hands until about 3/4 in. thick but still in one piece.
+                </p>
+                <h5>Step 3</h5>
+                <p>
+                    Build a fire and let burn to ashy chunks (see "The DIY Firepit," below).
+                </p>
+                <h5>Step 4</h5>
+                <p>
+                    Spread each potato with 1 heaping tbsp. pesto and press to compact it. Heat a cast-iron skillet, then add potatoes. Pan-roast until crisp underneath, 5 minutes. Turn pesto side down and let roast and crisp up. "Roasting the pesto adds umami to the potatoes and an interesting toastiness." Put on a platter, pesto side up, and sprinkle with parsley. 
+                </p>
+                <h5>Step 5</h5>
+                <p>
+                    Make ahead: Potatoes and pesto, up to 2 days, chilled and covered.
+                </p>
+                <h5>Step 6</h5>
+                <p>
+                    The DIY Firepit 
+                </p>
+                <h5>Step 7</h5>
+                <p>
+                    "You can do anything on this. It's a little like camping in the middle of your day," says Napa Valley chef Michael Chiarello. All you need is bricks arranged to fit under your cooking grate and some sand.
+                </p>
+                <h5>Step 8</h5>
+                <p>
+                    Build the pit: Spread a double layer of heavy-duty foil on the ground ("not grass," warns Chiarello, since it may scorch). Make it big enough to extend a foot beyond your cooking grate in all directions. Build a brick rectangle 3 layers high, leaving a couple of bricks out of the top layer on opposite sides, to encourage airflow. (For a standard 21-in. round Weber grate, the rectangle should be 2 bricks by 3 bricks.) Fill with about an inch of sand.
+                </p>
+                <h5>Step 9</h5>
+                <p>
+                    Light the fire: Put several balled-up sheets of newspaper in the center and position kindling into a tipi around it; lean larger kindling and then 5 to 6 small logs (preferably oak). Light the fire. "The tipi lets every bit of flame go up past 3 or 4 logs," says Chiarello, so the fire starts fast. Once the logs have caught, add several larger logs to the perimeter. Let them burn down to ashy chunks with low flames (1 1/2 to 2 hours). Because there's less smoke and char than cooking over a flaming fire, Chiarello says, "it makes your food taste much cleaner, gives nuanced flavor, and is better for wine."
+                </p>
+                <h5>Step 10</h5>
+                <p>
+                    Start cooking: Keep another log burning at the back of the pit. When it's ashy chunks, rake it into the main fire to maintain heat.
+                </p>
+            </div>
+        </div>
+        <div class="section7">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sJXEU91MIIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text7">
+                <h2>Video</h2>
+                <p>
+                    For more mediterranean recipes, you can wqatch the video right here.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Diets</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Terms of policy</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p class="follow">Follow Us</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <br>
+                    <p class="subscribe">Subscribe</p>
+                    <a class="subscribe" href="subscribe.html">
+                        <button class="button1">
+                            Subscribe
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
